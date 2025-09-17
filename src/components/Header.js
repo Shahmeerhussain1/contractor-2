@@ -47,9 +47,9 @@ const Header = () => {
             {/* CTA Button */}
             <a
               href="#"
-              className="ml-6 flex items-center gap-1 bg-white border border-blue-400 text-blue-400 px-8 py-2 rounded-full hover:bg-blue-400 hover:text-white transition"
+              className="ml-6 flex items-center gap-1 bg-white border border-blue-400 text-blue-400 px-8 py-3.5 gap-4 rounded-full hover:bg-blue-400 hover:text-white transition"
             >
-              Launch Free Pilot <ArrowUpRight size={16} />
+              Launch Free Pilot <ArrowUpRight size={24} />
             </a>
           </div>
 
