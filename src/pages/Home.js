@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Quote } from 'lucide-react';
 import React from 'react';
 import bgImage from "../assets/images/videos/hero-1.png"
 import bgImage2 from "../assets/images/containers.png"
@@ -215,21 +215,21 @@ const Home = () => {
 
           {/* Solutions Grid */}
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className=" rounded-2xl p-4 shadow-md hover:shadow-xl transition">
+            <div className=" rounded-2xl p-4 shadow-md hover:shadow-xl transition backdrop-blur-sm">
               <h3 className="text-xl font-normal">Healthcare & Clinics</h3>
               <p className="mt-2 text-sm">
                 Reduce no-shows, optimize scheduling, maintain HIPAA compliance.
               </p>
             </div>
 
-            <div className=" rounded-2xl p-4 shadow-md hover:shadow-xl transition">
+            <div className=" rounded-2xl p-4 shadow-md hover:shadow-xl transition backdrop-blur-sm">
               <h3 className="text-xl font-normal">Logistics & Transportation</h3>
               <p className="mt-2 text-sm">
                 Book drivers, track shipments, and update customers in real time.
               </p>
             </div>
 
-            <div className=" rounded-2xl p-4 shadow-md hover:shadow-xl transition">
+            <div className=" rounded-2xl p-4 shadow-md hover:shadow-xl transition backdrop-blur-sm">
               <h3 className="text-xl font-normal">Professional Services</h3>
               <p className="mt-2 text-sm">
                 Automate scheduling, confirmations, and client updates at scale.
@@ -246,19 +246,160 @@ const Home = () => {
 
 
       {/* Introduction Section */}
-      < section className="py-12 container mx-auto px-4" >
-        <h3 className="text-3xl font-bold mb-6 text-center">Who We Are</h3>
-        <p className="text-lg mb-4">
-          M/S HBAS & CO is a premier civil construction company specializing in irrigation, water management, and infrastructure development. Founded in 1990, we are committed to delivering high-quality projects with excellence and integrity.
-        </p>
-        {/* Embed a Video */}
-        <div className="flex justify-center">
-          <video className="w-full max-w-2xl" controls>
-            <source src="https://example.com/construction-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <section className='py-10 md:py-20 bg-[#F9F9F9]'>
+        <div className='px-6 max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 justify-between items-center'>
+          <div className='w-full lg:w-[50%]'>
+            {/* <h2 className="text-4xl md:text-[40px] font-normal mb-2 md:leading-[65px] text-left font-telegraf w-full white-spaces"> Why<span className='font-black mx-2 bg-custom-gradient py-0.5 bg-clip-text text-transparent'>Enterprises</span>Choose Us</h2> */}
+            <h2 class="text-3xl sm:text-4xl md:text-[40px] font-normal mb-2 leading-snug md:leading-[65px] text-left font-telegraf w-full break-words">
+              Why
+              <span class="font-black bg-custom-gradient py-0.5 bg-clip-text text-transparent mx-2">
+                Enterprises
+              </span>
+              Choose Us
+            </h2>
+
+            <p className="text-sm  text-left  font-normal md:leading-[25px] mb-4">Trusted by leading organizations for our proven scalability, reliability, and innovation. We deliver measurable business outcomes with faster adoption and continuous optimization.</p>
+
+            <div>
+              <div className='flex p-4 gap-3 items-center bg-[#FFFFFF] rounded-[20px] mb-3'>
+                <div>
+                  <img className='w-[60px]' src='./chat.png' />
+                </div>
+                <div>
+                  <p className="text-[24px] text-left  font-normal md:leading-[24px] mb-2">Human-like Conversations</p>
+                  <p className="text-sm text-left  font-normal md:leading-[24px] ">Multilingual, contextual, and indistinguishable from live agents</p>
+
+                </div>
+
+              </div>
+              <div className='flex p-4 gap-3 items-center bg-[#FFFFFF] rounded-[20px] mb-3'>
+                <div>
+                  <img className='w-[60px]' src='./chat.png' />
+                </div>
+                <div>
+                  <p className="text-[24px]  text-left  font-normal md:leading-[24px] mb-2">Seamless Integrations</p>
+                  <p className="text-sm  text-left  font-normal md:leading-[24px] ">Works with Salesforce, HubSpot, calendars, and major telephony platforms</p>
+
+                </div>
+
+              </div>
+              <div className='flex p-4 gap-3 items-center bg-[#FFFFFF] rounded-[20px] mb-3'>
+                <div>
+                  <img className='w-[60px]' src='./chat.png' />
+                </div>
+                <div>
+                  <p className="text-[24px]  text-left  font-normal md:leading-[24px] mb-2">Smart Analytics</p>
+                  <p className="text-sm  text-left  font-normal md:leading-[24px] ">Real-time dashboards for call quality, customer satisfaction, and ROI</p>
+                </div>
+
+              </div>
+              <div className='flex p-4 gap-3 items-center bg-[#FFFFFF] rounded-[20px]'>
+                <div>
+                  <img className='w-[60px]' src='./chat.png' />
+                </div>
+                <div>
+                  <p className="text-[24px]  text-left  font-normal md:leading-[24px] mb-2">Proven ROI</p>
+                  <p className="text-sm  text-left  font-normal md:leading-[24px] ">Documented savings, faster response times, and measurable CX improvements</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div className='lg:w-[50%] w-full  rounded-[20px] h-fit'>
+            <img src='./gentelmen.png' />
+          </div>
+
         </div>
-      </section >
+      </section>
+
+      <section className='py-130 md:py-20 bg-[#FFFFFF]'>
+        <section className="bg-black text-white max-w-7xl mx-auto xl:rounded-[30px] py-16 px-6 md:px-12 lg:px-20">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left Side */}
+            <div>
+              <h2 className="text-4xl md:text-5xl font-normal mb-6">
+                Our Clients Say
+              </h2>
+              <p className="text-white leading-relaxed">
+                Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                archivos de texto. Lorem Ipsum ha sido el texto de relleno.
+              </p>
+            </div>
+
+            {/* Right Side */}
+            <div className="relative bg-transparent">
+              <div className="flex flex-col items-start text-center">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Client"
+                  className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-black"
+                />
+                <p className="text-white text-left mb-4">
+                  Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                  archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
+                  de las industrias desde el año 1500, cuando un impresor
+                  desconocido.
+                </p>
+                <h4 className="font-normal text-2xl">John Doe</h4>
+              </div>
+
+              {/* Quote Icon */}
+              <Quote
+                className="absolute -top-4 right-0 text-white opacity-80 w-10 h-10"
+                strokeWidth={2.5}
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      {/* CLOUDS */}
+
+      <section className="relative w-full min-h-[450px] flex items-center justify-center text-center bg-blue-500 overflow-hidden">
+        {/* Clouds at the bottom */}
+        <img
+          src="/clouds.png" // replace with your cloud image path
+          alt="Clouds"
+          className="absolute bottom-0 left-0 w-full h-auto pointer-events-none"
+        />
+
+        {/* Plane */}
+        <img
+          src="/plane.png" // replace with your plane image path
+          alt="Plane"
+          className="absolute top-10 md:left-0 w-40 md:w-64 animate-float scale-x-[-1]"
+        />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-3xl px-6">
+          <h1 className="text-4xl md:text-[50px] text-white font-normal mb-6 px-6 md:leading-[65px]">
+            Ready to Transform <span className="font-bold">Enterprise</span>{" "}
+            Communication?
+          </h1>
+          <p className="text-sm md:text-xl text-white font-normal px-6 md:leading-[32px] text-center mb-6">
+            Experience a risk-free pilot, launch AI voice automation in your business with zero upfront risk.
+          </p>
+
+          {/* Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button
+              type="submit"
+              className="inline-flex gap-3 md:mb-8 items-center justify-center px-10 py-3.5 bg-gradient-to-r from-[#2775EA] to-[#77DCBC]  text-white font-normal rounded-full focus:ring-4 focus:ring-blue-500/25 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Book a Demo
+              <ArrowUpRight size={24} />
+            </button>
+            <button
+              type="submit"
+              className="inline-flex gap-3 md:mb-8 items-center justify-center px-10 py-3.5 bg-white text-blue-600 font-normal rounded-full focus:ring-4 focus:ring-blue-500/25 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Launch Free Pilot
+              <ArrowUpRight size={24} />
+            </button>
+
+          </div>
+        </div>
+      </section>
 
 
     </section >
