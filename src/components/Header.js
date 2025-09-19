@@ -8,10 +8,10 @@ const Header = () => {
 
   const links = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Resources", path: "/resources" },
-    { name: "Pricing", path: "/pricing" },
+    // { name: "About Us", path: "/about" },
+    // { name: "Services", path: "/services" },
+    // { name: "Resources", path: "/resources" },
+    // { name: "Pricing", path: "/pricing" },
     { name: "Contact Us", path: "/contact" },
   ];
 
@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <span className="text-2xl font-bold tracking-wide">LOGOIPSUM</span>
+            <a href="/" className="text-2xl font-bold tracking-wide">LOGOIPSUM</a>
           </div>
 
           {/* Desktop Links */}
